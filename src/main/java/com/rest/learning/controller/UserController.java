@@ -16,14 +16,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.util.UriComponentsBuilder;
-
-/* Get: http://localhost:8080/RestMavenSpringMVC/UserController/users
- * Put: http://localhost:8080/RestMavenSpringMVC/UserController/user/5
- * Delete: http://localhost:8080/RestMavenSpringMVC/UserController/user/4
+/* http://localhost:8080/SpringRestWithAnnotationsOnly/
+ * Get: http://localhost:8080/SpringRestWithAnnotationsOnly/UserController/users
+ * Put: http://localhost:8080/SpringRestWithAnnotationsOnly/UserController/user/5
+ * Delete: http://localhost:8080/SpringRestWithAnnotationsOnly/UserController/user/4
  * If we use configuration package then we need to use above URLs for testing.
- * If we are not using configuration package then we need to append API in the above URL like below
- * Get: http://localhost:8080/RestMavenSpringMVC/API/UserController/users
- * */
+ **/
 
 @RestController
 @RequestMapping(value = "/UserController")

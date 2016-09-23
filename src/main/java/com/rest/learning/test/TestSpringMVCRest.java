@@ -8,7 +8,7 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.web.client.RestTemplate;
 
-import com.rest.learning.bean.Employee;
+import com.rest.learning.bean.User;
 
 public class TestSpringMVCRest {
 
@@ -26,9 +26,9 @@ public class TestSpringMVCRest {
         //HttpEntity request1= new HttpEntity(headers);
         
         System.out.println("Executing and Testing method one using RestTemplate");
-        Employee emp = restTemplate.getForObject
-        		("http://localhost:8080/RestMavenSpringMVC/API/Employee/ZubinShah/zubin095@gmail.com?id=1234", Employee.class, request);
-        System.out.println("Values are:" + emp.getName() + " " + emp.getEmailId() + " " + emp.getEmpId());
+        User user = restTemplate.getForObject
+        		("http://localhost:8080/RestMavenSpringMVC/UserController/user/4", User.class, request);
+        System.out.println("Values are:" + user.getName() + " " + user.getSalary());
  	}
 	
 }
